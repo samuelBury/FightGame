@@ -2,7 +2,7 @@ class Sprite{
     constructor({position, imageSrc}){
         this.position=position
         this.height =150
-        this.image= new Image(1024,576)
+        this.image= new Image(1200,600)
         this.width = 50
         this.image.src = imageSrc
     }
@@ -55,7 +55,7 @@ class Fighter{
         this.position.x+=this.velocity.x
         this.position.y+=this.velocity.y
 
-        if(this.position.y+this.height+ this.velocity.y>=canvas.height){
+        if(this.position.y+this.height+ this.velocity.y>=canvas.height-50){
             this.velocity.y=0;
         }
         else{

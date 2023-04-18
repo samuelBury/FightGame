@@ -1,8 +1,8 @@
 const canvas = document.querySelector('canvas')
 const c = canvas.getContext('2d')
 
-canvas.width = 1024
-canvas.height = 576
+canvas.width = 1200
+canvas.height = 675
 
 c.fillRect(0,0,canvas.width, canvas.height)
 
@@ -13,13 +13,13 @@ const background = new Sprite({
         x:0,
         y:0
     },
-    imageSrc: 'images/backgroundFG.png'
+    imageSrc: 'images/background2.jpg'
 })
 
 const player = new Fighter({
     position :{
         x:0,
-        y:0
+        y:100
     },
     velocity:{
         x:0,
